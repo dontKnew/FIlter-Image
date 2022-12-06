@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+<link rel="stylesheet" href="./index.css">  
+    </head>
+    <body>
+    
+    <div id="imageBody" class="justify-content">
+     <img src="https://dl.dropbox.com/s/l7420ea6djov9u5/ac532724c81b03f61272f16115c1b199.jpg" alt ="filterimage" id="mom" class="rounded mx-auto d-block" >
+     <div>
+    <button onclick ="reset()">Reset Image</button></div>
+    <div class="row" >
+    <div class ="w-5 mx-auto">
+  <br>  Sepia : <input type="range" max="100" min ="0" class ="sepia customRange" id="get" oninput ="filter()">
+    
+    
+    
+    <br>  Hue: <input type="range" max="330" min ="0" value="0" class ="hue get" id="get" oninput ="filter()">
+
+    
+    
+    <br>  Invert: <input type="range" max="100" min ="0" value="0" class ="invert get" id="get" oninput ="filter()">
+    
+    
+    <br>  Saturate: <input type="range" max="200" min ="0" value="100" class ="saturate get"  id="get" oninput ="filter()">
+    
+    
+    <br>  Opacity: <input type="range" max="100" min ="0" value="100" class ="opacity get" id="get" oninput ="filter()">
+    
+    <br>  Graysacle: <input type="range" max="100" min ="0" value="0" class ="grayscale get"  id="get" oninput ="filter()">
+
+    <br>  Blur: <input type="range" max="5" min ="0" value="0" class ="blur get" id="get" oninput ="filter()">
+   </div>
+    
+    </div></div>
+    <h4 id="enter">ohh </h4>
+     
+    </body>
+</html>
